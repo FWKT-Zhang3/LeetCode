@@ -1,3 +1,5 @@
+package palindromeNumber;
+
 /**
  * Created by Max Zhang on 2020/9/5.
  *
