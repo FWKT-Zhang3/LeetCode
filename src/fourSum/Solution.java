@@ -1,7 +1,5 @@
 package fourSum;
 
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -50,9 +48,9 @@ public class Solution {
          * 的过程，可以减少一些不必要的计算
          */
         ArrayList<List<Integer>> res = new ArrayList<>();
+        if (nums == null) return res;
         int len = nums.length;
-        if (nums == null || len < 4)
-            return res;
+        if (len < 4) return res;
 
         Arrays.sort(nums);
 
@@ -153,7 +151,6 @@ public class Solution {
             if (sum > target)
                 j--;
         }
-        return;
     }
 
     /**
@@ -223,7 +220,7 @@ public class Solution {
         }
     }
     public static void main(String[] args) {
-        Solution s = new Solution();
-        System.out.println(s.kSum_Trim(new int[]{-3,-1,0,2,4,5}, 2,4));
+//        Solution s = new Solution();
+//        System.out.println(s.kSum_Trim(new int[]{-3,-1,0,2,4,5}, 2,4));
     }
 }
