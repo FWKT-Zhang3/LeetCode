@@ -31,6 +31,7 @@ public class Solution {
             ans.add(new LinkedList<>(path));
         } else if (target > 0) {
             for (int i = start; i < candidates.length && target >= candidates[i]; i++) {
+                // 此处注意，画图便于理解
                 if (i > start && candidates[i] == candidates[i-1]) continue;
                 path.add(candidates[i]);
                 findCombination(ans, path, candidates, target - candidates[i], i + 1);
