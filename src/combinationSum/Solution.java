@@ -1,7 +1,5 @@
 package combinationSum;
 
-import sun.security.krb5.internal.PAData;
-
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
