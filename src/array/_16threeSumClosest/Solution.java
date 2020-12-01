@@ -1,4 +1,4 @@
-package threeSumClosest;
+package array._16threeSumClosest;
 
 import java.util.Arrays;
 

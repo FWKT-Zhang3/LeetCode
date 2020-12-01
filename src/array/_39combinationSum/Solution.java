@@ -1,4 +1,4 @@
-package combinationSum;
+package array._39combinationSum;
 
 import java.util.Arrays;
 import java.util.LinkedList;

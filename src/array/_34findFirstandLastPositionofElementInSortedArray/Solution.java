@@ -1,4 +1,4 @@
-package findFirstandLastPositionofElementInSortedArray;
+package array._34findFirstandLastPositionofElementInSortedArray;
 
 /**
  * @Author: Max Zhang

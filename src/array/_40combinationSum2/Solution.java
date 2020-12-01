@@ -1,4 +1,4 @@
-package combinationSum2;
+package array._40combinationSum2;
 
 import java.util.Arrays;
 import java.util.LinkedList;

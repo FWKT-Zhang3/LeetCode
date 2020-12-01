@@ -1,4 +1,4 @@
-package searchInRotatedSortedArray;
+package array._39combinationSum.searchInRotatedSortedArray;
 
 /**
  * @Author: Max Zhang

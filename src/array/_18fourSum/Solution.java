@@ -1,4 +1,4 @@
-package fourSum;
+package array._18fourSum;
 
 import java.util.ArrayList;
 import java.util.Arrays;

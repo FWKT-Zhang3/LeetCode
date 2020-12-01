@@ -1,4 +1,4 @@
-package removeDuplicatesfromSortedArray;
+package array._26removeDuplicatesfromSortedArray;
 
 /**
  * @Author: Max Zhang

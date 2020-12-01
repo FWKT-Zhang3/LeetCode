@@ -1,4 +1,4 @@
-package removeElement;
+package array._27removeElement;
 
 /**
  * @Author: Max Zhang

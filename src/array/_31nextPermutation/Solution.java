@@ -1,4 +1,4 @@
-package nextPermutation;
+package array._31nextPermutation;
 
 import java.util.Arrays;
 
