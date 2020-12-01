@@ -1,4 +1,4 @@
-package array._41searchInsertPosition;
+package array._35searchInsertPosition;
 
 /**
  * @Author: Max Zhang
