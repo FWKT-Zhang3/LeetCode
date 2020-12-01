@@ -4,14 +4,14 @@ package array._45jumpGame2;
  * @Author: Max Zhang
  * @Date: 2020/12/1 15:54
  * @Description: Given an array of non-negative integers nums, you are
- *      initially positioned at the first index of the array.
- *
- *      Each element in the array represents your maximum jump length at
- *      that position.
- *
- *      Your goal is to reach the last index in the minimum number of jumps.
- *
- *      You can assume that you can always reach the last index.
+ * initially positioned at the first index of the array.
+ * <p>
+ * Each element in the array represents your maximum jump length at
+ * that position.
+ * <p>
+ * Your goal is to reach the last index in the minimum number of jumps.
+ * <p>
+ * You can assume that you can always reach the last index.
  */
 public class Solution {
     public int jump(int[] nums) {
@@ -36,16 +36,17 @@ public class Solution {
         // all points in [curBegin, curEnd] can reach. Once the current point
         // reaches curEnd, then trigger another jump, and set the new curEnd
         // with curFarthest, then keep the above steps, as the following:
-        int jumps = 0, curEnd = 0, curFarthest = 0;
-        for (int i = 0; i < nums.length - 1; i++) {
-            curFarthest = Math.max(curFarthest, i + nums[i]);
-            if (i == curEnd) {
-                jumps++;
-                curEnd = curFarthest;
-            }
-        }
-
-        return jumps;
+        // 其实是bfs
+//        int jumps = 0, curEnd = 0, curFarthest = 0;
+//        for (int i = 0; i < nums.length - 1; i++) {
+//            curFarthest = Math.max(curFarthest, i + nums[i]);
+//            if (i == curEnd) {
+//                jumps++;
+//                curEnd = curFarthest;
+//            }
+//        }
+//
+//        return jumps;
 
         // the version that consider the condition that can't reach the end
 //        int jumps = 0, curEnd = 0, curFarthest = 0;
@@ -59,6 +60,22 @@ public class Solution {
 //        }
 //
 //        return jumps;
+
+
+        // BFS
+        if (nums.length < 2) return 0;
+        int curMax = 0;
+        int level = 0, i = 0, furthest;
+        while (i <= curMax) {
+            furthest = curMax;
+            for (; i <= curMax; i++) {
+                furthest = Math.max(furthest, nums[i] + i);
+                if (furthest >= nums.length - 1) return level + 1;
+            }
+            level++;
+            curMax = furthest;
+        }
+        return -1;
     }
 
     /*
@@ -81,6 +98,6 @@ public class Solution {
 
     public static void main(String[] args) {
         Solution s = new Solution();
-        System.out.println(s.jump(new int[]{2,9,6,5,7,0,7,2,7,9,3,2,2,5,7,8,1,6,6,6,3,5,2,2,6,3}));
+        System.out.println(s.jump(new int[]{2, 9, 6, 5, 7, 0, 7, 2, 7, 9, 3, 2, 2, 5, 7, 8, 1, 6, 6, 6, 3, 5, 2, 2, 6, 3}));
     }
 }
