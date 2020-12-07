@@ -31,6 +31,9 @@ public class Solution {
 //
 //        return min;
 
+
+
+
         // The main idea is based on greedy. Let's say the range of the current
         // jump is [curBegin, curEnd], curFarthest is the farthest point that
         // all points in [curBegin, curEnd] can reach. Once the current point
@@ -47,6 +50,9 @@ public class Solution {
 //        }
 //
 //        return jumps;
+
+
+
 
         // the version that consider the condition that can't reach the end
 //        int jumps = 0, curEnd = 0, curFarthest = 0;

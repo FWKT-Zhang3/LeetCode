@@ -28,7 +28,7 @@ import java.util.Arrays;
  *          重置为升序，得到 123546。显然 123546 比 123564 更小，123546 就是 123465 的下
  *          一个排列
  *
- * 一开始完全没有想法，思维混乱，没有条理。看了别人写的算法推导解析，很清晰明了。
+ * Note：一开始完全没有想法，思维混乱，没有条理。看了别人写的算法推导解析，很清晰明了。
  */
 public class Solution {
     public void nextPermutation(int[] nums) {

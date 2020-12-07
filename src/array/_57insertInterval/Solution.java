@@ -12,8 +12,8 @@ import java.util.LinkedList;
  *      You may assume that the intervals were initially sorted according to
  *      their start times.
  *
- * Note: 这两种方法，运行速度和占用内存差不多，但是第二种方法明显更加简介，可读性更高，
- *      在答题之前应该多想想，不应该是有点想法就直接写，想一点写一点，缝缝补补，
+ * Note: 这两种方法，运行速度和占用内存差不多，但是第二种方法明显更加简洁，可读性更高，
+ *      在答题之前 ·应·该·多·想·想·，不应该是有点想法就直接写，想一点写一点，缝缝补补，
  *      好好思考分析题目过后，再开始答题
  */
 public class Solution {
