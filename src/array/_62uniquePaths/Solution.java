@@ -5,7 +5,14 @@ import java.util.HashMap;
 /**
  * @Author: Max Zhang
  * @Date: 2020/12/7 14:44
- * @Description:
+ * @Description: A robot is located at the top-left corner of a m x n grid
+ *      (marked 'Start' in the diagram below).
+ *
+ *      The robot can only move either down or right at any point in time.
+ *      The robot is trying to reach the bottom-right corner of the grid
+ *      (marked 'Finish' in the diagram below).
+ *
+ *      How many possible unique paths are there?
  */
 public class Solution {
     /**
