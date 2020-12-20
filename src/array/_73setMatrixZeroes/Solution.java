@@ -14,6 +14,7 @@ import java.util.Arrays;
  *      1. A straight forward solution using O(mn) space is probably a bad idea.
  *      2. A simple improvement uses O(m + n) space, but still not the best solution.
  *      3. Could you devise a constant space solution?
+ * Note: 标记是一种很好用的方法
  */
 public class Solution {
     public void setZeroes(int[][] matrix) {
